@@ -3,7 +3,7 @@ NAME
     tarball
 
 VERSION
-    version 0.2.0
+    version 0.2.1
 
 SYNOPSIS
         # in dist.ini
@@ -48,6 +48,13 @@ DESCRIPTION
 SEE ALSO
     Dist::Zilla::Plugin::ShareDir, which you want to use in tandem with this
     module.
+
+    File::ShareDir::Tarball - transparently extract the tarball behind the
+    scene so that the shared directory can be accessed just like it is in
+    File::ShareDir.
+
+    Module::Build::CleanInstall - A subclass of Module::Build which
+    deinstall the files from previous installations via their *packlist*.
 
 AUTHOR
     Yanick Champoux <yanick@babyl.dyndns.org>

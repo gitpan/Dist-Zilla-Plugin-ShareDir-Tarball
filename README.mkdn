@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 # VERSION
 
-version 0.2.0
+version 0.2.1
 
 # SYNOPSIS
 
@@ -50,6 +50,13 @@ with them.  If there is no such files, the process is simply skipped.
 
 [Dist::Zilla::Plugin::ShareDir](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::ShareDir), which you want to use in tandem with this
 module.
+
+[File::ShareDir::Tarball](http://search.cpan.org/perldoc?File::ShareDir::Tarball) - transparently extract the tarball behind the
+scene so that the shared directory can be accessed just like it is in
+[File::ShareDir](http://search.cpan.org/perldoc?File::ShareDir).
+
+[Module::Build::CleanInstall](http://search.cpan.org/perldoc?Module::Build::CleanInstall) - A subclass of [Module::Build](http://search.cpan.org/perldoc?Module::Build) which
+deinstall the files from previous installations via their _packlist_.
 
 # AUTHOR
 

@@ -1,5 +1,12 @@
 Revision history for Dist-Zilla-Plugin-ShareDir-Tarball
 
+0.2.1 2012-11-03
+ [DOCUMENTATION]
+ - Add mention to Module::Build::CleanInstall
+
+ [STATISTICS]
+ - code churn: 13 files changed, 197 insertions(+), 2 deletions(-)
+
 0.2.0 2012-10-18
  - Compression was done wrong. Ooops.
 

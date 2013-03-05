@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 # VERSION
 
-version 0.2.1
+version 0.3.0
 
 # SYNOPSIS
 
@@ -46,6 +46,13 @@ But archiving the content of the _share_ directory is no fun. Hence
 files in the _share_ directory and build the _shared-files.tar.gz_ archive
 with them.  If there is no such files, the process is simply skipped.
 
+# OPTIONS
+
+## dir
+
+The source directory to be bundled into the shared tarball. Defaults to
+`share`.
+
 # SEE ALSO
 
 [Dist::Zilla::Plugin::ShareDir](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::ShareDir), which you want to use in tandem with this
@@ -60,7 +67,7 @@ deinstall the files from previous installations via their _packlist_.
 
 # AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@babyl.dyndns.org> [![endorse](http://api.coderwall.com/yanick/endorsecount.png)](http://coderwall.com/yanick)
 
 # COPYRIGHT AND LICENSE
 

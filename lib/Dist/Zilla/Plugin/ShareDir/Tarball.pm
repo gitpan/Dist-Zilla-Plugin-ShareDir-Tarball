@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::ShareDir::Tarball::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.2.1';
+  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.3.0';
 }
 # ABSTRACT: Bundle your shared dir into a tarball
 
@@ -20,16 +20,23 @@ use Archive::Tar;
 with 'Dist::Zilla::Role::FileMunger';
 with 'Dist::Zilla::Role::FileInjector';
 
+has dir => (
+  is   => 'ro',
+  isa  => 'Str',
+  default => 'share',
+);
+
 sub munge_files {
     my( $self ) = @_;
 
-    my @shared = grep { $_->name =~ m#^share/# }  @{ $self->zilla->files }
+    my $src = $self->dir;
+    my @shared = grep { $_->name =~ m#^$src/# }  @{ $self->zilla->files }
         or return;
 
     my $archive = Archive::Tar->new;
 
     for ( @shared ) {
-        ( my $archive_name = $_->name ) =~ s#share/##;
+        ( my $archive_name = $_->name ) =~ s#$src/##;
         $archive->add_data( $archive_name => $_->content );
         $self->zilla->prune_file($_);
     }
@@ -52,7 +59,7 @@ Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 =head1 VERSION
 
-version 0.2.1
+version 0.3.0
 
 =head1 SYNOPSIS
 
@@ -93,6 +100,13 @@ But archiving the content of the I<share> directory is no fun. Hence
 L<Dist::Zilla::Plugin::ShareDir::Tarball> which, upon the file munging stage, gathers all 
 files in the I<share> directory and build the I<shared-files.tar.gz> archive
 with them.  If there is no such files, the process is simply skipped.
+
+=head1 OPTIONS
+
+=head2 dir
+
+The source directory to be bundled into the shared tarball. Defaults to
+C<share>.
 
 =head1 SEE ALSO
 

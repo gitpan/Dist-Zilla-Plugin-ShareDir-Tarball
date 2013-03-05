@@ -3,7 +3,7 @@ NAME
     tarball
 
 VERSION
-    version 0.2.1
+    version 0.3.0
 
 SYNOPSIS
         # in dist.ini
@@ -44,6 +44,11 @@ DESCRIPTION
     stage, gathers all files in the *share* directory and build the
     *shared-files.tar.gz* archive with them. If there is no such files, the
     process is simply skipped.
+
+OPTIONS
+  dir
+    The source directory to be bundled into the shared tarball. Defaults to
+    "share".
 
 SEE ALSO
     Dist::Zilla::Plugin::ShareDir, which you want to use in tandem with this

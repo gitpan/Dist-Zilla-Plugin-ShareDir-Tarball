@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 # VERSION
 
-version 0.3.0
+version 0.3.1
 
 # SYNOPSIS
 
@@ -55,8 +55,8 @@ The source directory to be bundled into the shared tarball. Defaults to
 
 # SEE ALSO
 
-[Dist::Zilla::Plugin::ShareDir](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::ShareDir), which you want to use in tandem with this
-module.
+[Dist::Zilla::Plugin::ShareDir](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::ShareDir), which is similar to this module, but without
+the conversion of the shared directory into a tarball.
 
 [File::ShareDir::Tarball](http://search.cpan.org/perldoc?File::ShareDir::Tarball) - transparently extract the tarball behind the
 scene so that the shared directory can be accessed just like it is in

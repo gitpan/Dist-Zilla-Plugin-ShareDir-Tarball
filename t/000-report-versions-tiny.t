@@ -53,6 +53,7 @@ eval { $v .= pmver('Compress::Zlib','any version') };
 eval { $v .= pmver('Dist::Zilla::File::InMemory','any version') };
 eval { $v .= pmver('Dist::Zilla::Role::FileInjector','any version') };
 eval { $v .= pmver('Dist::Zilla::Role::FileMunger','any version') };
+eval { $v .= pmver('Dist::Zilla::Role::ShareDir','any version') };
 eval { $v .= pmver('File::Find','any version') };
 eval { $v .= pmver('File::Temp','any version') };
 eval { $v .= pmver('Module::Build','0.3601') };

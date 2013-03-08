@@ -3,7 +3,7 @@ NAME
     tarball
 
 VERSION
-    version 0.3.0
+    version 0.3.1
 
 SYNOPSIS
         # in dist.ini
@@ -51,8 +51,8 @@ OPTIONS
     "share".
 
 SEE ALSO
-    Dist::Zilla::Plugin::ShareDir, which you want to use in tandem with this
-    module.
+    Dist::Zilla::Plugin::ShareDir, which is similar to this module, but
+    without the conversion of the shared directory into a tarball.
 
     File::ShareDir::Tarball - transparently extract the tarball behind the
     scene so that the shared directory can be accessed just like it is in

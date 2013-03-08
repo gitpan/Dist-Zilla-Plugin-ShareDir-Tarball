@@ -36,6 +36,7 @@
             "Dist::Zilla::File::InMemory" : "0",
             "Dist::Zilla::Role::FileInjector" : "0",
             "Dist::Zilla::Role::FileMunger" : "0",
+            "Dist::Zilla::Role::ShareDir" : "0",
             "Moose" : "0",
             "strict" : "0",
             "warnings" : "0"
@@ -53,7 +54,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::ShareDir::Tarball" : {
          "file" : "lib/Dist/Zilla/Plugin/ShareDir/Tarball.pm",
-         "version" : "v0.3.0"
+         "version" : "v0.3.1"
       }
    },
    "release_status" : "stable",
@@ -69,7 +70,7 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-ShareDir-Tarball"
       }
    },
-   "version" : "0.3.0",
+   "version" : "0.3.1",
    "x_author_pledge" : {
       "version" : 1
    },

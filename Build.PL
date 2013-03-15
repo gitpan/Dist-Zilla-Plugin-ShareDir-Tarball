@@ -21,7 +21,7 @@ my %module_build_args = (
     "Yanick Champoux <yanick\@babyl.dyndns.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-ShareDir-Tarball",
-  "dist_version" => "0.3.1",
+  "dist_version" => "0.4.0",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::ShareDir::Tarball",
   "recommends" => {},
@@ -30,8 +30,8 @@ my %module_build_args = (
     "Archive::Tar" => 0,
     "Compress::Zlib" => 0,
     "Dist::Zilla::File::InMemory" => 0,
+    "Dist::Zilla::Role::FileGatherer" => 0,
     "Dist::Zilla::Role::FileInjector" => 0,
-    "Dist::Zilla::Role::FileMunger" => 0,
     "Dist::Zilla::Role::ShareDir" => 0,
     "Moose" => 0,
     "strict" => 0,

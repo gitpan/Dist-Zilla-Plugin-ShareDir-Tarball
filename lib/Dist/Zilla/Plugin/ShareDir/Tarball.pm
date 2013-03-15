@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::ShareDir::Tarball::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.3.1';
+  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.4.0';
 }
 # ABSTRACT: Bundle your shared dir into a tarball
 
@@ -55,7 +55,7 @@ sub find_files {
 }
 
 
-sub munge_files {
+sub gather_files {
     my( $self ) = @_;
 
     my $src = $self->dir;
@@ -68,14 +68,14 @@ sub munge_files {
     }
 
     $self->add_file( Dist::Zilla::File::InMemory->new(
-        name    => 'share/shared-files.tar.gz',
+        name    => join( '/', $self->dir, 'shared-files.tar.gz'),
         content => $self->compressed_archive,
     ));
 }
 
 with 'Dist::Zilla::Role::ShareDir',
      'Dist::Zilla::Role::FileInjector',
-     'Dist::Zilla::Role::FileMunger';
+     'Dist::Zilla::Role::FileGatherer';
 
 1;
 
@@ -89,7 +89,7 @@ Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 =head1 VERSION
 
-version 0.3.1
+version 0.4.0
 
 =head1 SYNOPSIS
 

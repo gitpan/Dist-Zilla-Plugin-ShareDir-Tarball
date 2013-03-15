@@ -4,7 +4,7 @@
       "Yanick Champoux <yanick@babyl.dyndns.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -34,8 +34,8 @@
             "Archive::Tar" : "0",
             "Compress::Zlib" : "0",
             "Dist::Zilla::File::InMemory" : "0",
+            "Dist::Zilla::Role::FileGatherer" : "0",
             "Dist::Zilla::Role::FileInjector" : "0",
-            "Dist::Zilla::Role::FileMunger" : "0",
             "Dist::Zilla::Role::ShareDir" : "0",
             "Moose" : "0",
             "strict" : "0",
@@ -46,6 +46,7 @@
          "requires" : {
             "File::Find" : "0",
             "File::Temp" : "0",
+            "Module::Build" : "0.3601",
             "Test::DZil" : "0",
             "Test::More" : "0.88"
          }
@@ -54,7 +55,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::ShareDir::Tarball" : {
          "file" : "lib/Dist/Zilla/Plugin/ShareDir/Tarball.pm",
-         "version" : "v0.3.1"
+         "version" : "v0.4.0"
       }
    },
    "release_status" : "stable",
@@ -70,7 +71,7 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-ShareDir-Tarball"
       }
    },
-   "version" : "0.3.1",
+   "version" : "0.4.0",
    "x_author_pledge" : {
       "version" : 1
    },

@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::ShareDir::Tarball::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.4.0';
+  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.4.1';
 }
 # ABSTRACT: Bundle your shared dir into a tarball
 
@@ -89,7 +89,7 @@ Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 =head1 VERSION
 
-version 0.4.0
+version 0.4.1
 
 =head1 SYNOPSIS
 

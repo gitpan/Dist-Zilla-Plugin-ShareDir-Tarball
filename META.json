@@ -55,7 +55,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::ShareDir::Tarball" : {
          "file" : "lib/Dist/Zilla/Plugin/ShareDir/Tarball.pm",
-         "version" : "v0.4.0"
+         "version" : "v0.4.1"
       }
    },
    "release_status" : "stable",
@@ -71,7 +71,7 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-ShareDir-Tarball"
       }
    },
-   "version" : "0.4.0",
+   "version" : "0.4.1",
    "x_author_pledge" : {
       "version" : 1
    },

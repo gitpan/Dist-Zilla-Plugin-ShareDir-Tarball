@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::ShareDir::Tarball::AUTHORITY = 'cpan:YANICK';
 }
 {
-  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.4.1';
+  $Dist::Zilla::Plugin::ShareDir::Tarball::VERSION = '0.4.2';
 }
 # ABSTRACT: Bundle your shared dir into a tarball
 
@@ -70,6 +70,7 @@ sub gather_files {
     $self->add_file( Dist::Zilla::File::InMemory->new(
         name    => join( '/', $self->dir, 'shared-files.tar.gz'),
         content => $self->compressed_archive,
+        encoding => 'bytes',
     ));
 }
 
@@ -83,13 +84,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::ShareDir::Tarball - Bundle your shared dir into a tarball
 
 =head1 VERSION
 
-version 0.4.1
+version 0.4.2
 
 =head1 SYNOPSIS
 
@@ -152,7 +155,7 @@ deinstall the files from previous installations via their I<packlist>.
 
 =head1 AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

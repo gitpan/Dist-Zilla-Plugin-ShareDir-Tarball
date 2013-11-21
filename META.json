@@ -1,10 +1,10 @@
 {
    "abstract" : "Bundle your shared dir into a tarball",
    "author" : [
-      "Yanick Champoux <yanick@babyl.dyndns.org>"
+      "Yanick Champoux <yanick@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -44,8 +44,9 @@
       },
       "test" : {
          "requires" : {
-            "File::Find" : "0",
-            "File::Temp" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "Module::Build" : "0.3601",
             "Test::DZil" : "0",
             "Test::More" : "0.88"
@@ -55,7 +56,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::ShareDir::Tarball" : {
          "file" : "lib/Dist/Zilla/Plugin/ShareDir/Tarball.pm",
-         "version" : "v0.4.1"
+         "version" : "v0.4.2"
       }
    },
    "release_status" : "stable",
@@ -71,10 +72,13 @@
          "web" : "https://github.com/yanick/Dist-Zilla-Plugin-ShareDir-Tarball"
       }
    },
-   "version" : "0.4.1",
+   "version" : "0.4.2",
    "x_author_pledge" : {
       "version" : 1
    },
-   "x_authority" : "cpan:YANICK"
+   "x_authority" : "cpan:YANICK",
+   "x_contributors" : [
+      "Steven Haryanto <sharyanto@cpan.org>"
+   ]
 }
 

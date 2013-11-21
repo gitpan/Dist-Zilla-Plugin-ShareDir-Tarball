@@ -3,7 +3,7 @@ NAME
     tarball
 
 VERSION
-    version 0.4.1
+    version 0.4.2
 
 SYNOPSIS
         # in dist.ini
@@ -62,7 +62,7 @@ SEE ALSO
     deinstall the files from previous installations via their *packlist*.
 
 AUTHOR
-    Yanick Champoux <yanick@babyl.dyndns.org>
+    Yanick Champoux <yanick@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2012 by Yanick Champoux.

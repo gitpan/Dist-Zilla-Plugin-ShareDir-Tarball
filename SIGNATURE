@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,19 +14,20 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 66a78073d43de9a88db6f62eda3589ced3140fa2 AUTHOR_PLEDGE
-SHA1 44bef83f2d4e3c66c167dd66b2138c9d637d8d68 Build.PL
-SHA1 4b6ecd9646cda7617ee75a0378d3153ce7f7de31 Changes
+SHA1 359678b07f7b2404443017a22a156d36d4e46866 AUTHOR_PLEDGE
+SHA1 2df5c486bbe0771c04f2d63373b9d6424edc0748 Build.PL
+SHA1 fef6cba6e81faf6594759de47c9d383d26a46667 CONTRIBUTORS
+SHA1 5ae9bcd8695cc5858b61cbc5080ccb57482b1eb3 Changes
 SHA1 505ec9d0ed865ab0d22ba522240823ff66e08278 INSTALL
 SHA1 42a9b278ca94a31df654fec186efe74ba9565d7e LICENSE
-SHA1 e832ec7c5b9784e0a566a2cc139c85ec6493a785 MANIFEST
-SHA1 ae6c52d84659eb6079c4c961f06528e25e3cc194 META.json
-SHA1 5c913c0a3ecca5a937acad700aca04a85137be6c META.yml
-SHA1 3f6bbe3cf26bfd671ed2321cd78ecab4f5a6831b README
-SHA1 e64972d58e9357aebf068527e99f7847522e3d1b README.mkdn
-SHA1 24c2b723e5ac4dd5d8132a84bb0aa310cba65ba7 lib/Dist/Zilla/Plugin/ShareDir/Tarball.pm
-SHA1 3cbe905b92fbc69d59a06031d5ce6c837b352aa2 t/00-compile.t
-SHA1 5df1759b31e30cb782b5a83b61fb7c3111a713bd t/000-report-versions-tiny.t
+SHA1 44426a9dbb6433e47c2960586691016c5da2cc8f MANIFEST
+SHA1 0e37faae45831d60579431c9640a28f9bdbd21a5 META.json
+SHA1 302b9e535bc4fccfbaf7dfa047021573c3384a0d META.yml
+SHA1 8aee3b54c5bfdeb63bd51eeede9211e7d02e6785 README
+SHA1 f7c76a73d0c2a17b08eb234eecfbde8058bb0758 README.mkdn
+SHA1 669c515ba93637aff7ed3688324c8812d6cd2978 lib/Dist/Zilla/Plugin/ShareDir/Tarball.pm
+SHA1 392cb042ff58ef3dc407632d5f16766b2a6b1ccc t/00-compile.t
+SHA1 625d87e7d21ed66524c6bdf410722fa2e758a45e t/000-report-versions-tiny.t
 SHA1 b2864b7c27eb9c03edf29318c875d931af04e7fd t/Test-DZST-2/Changes
 SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/Test-DZST-2/abc/xyz/dir1/blank.txt
 SHA1 9d058710a53a69b014b746bdfa68889b1a2bbdbb t/Test-DZST-2/dist.ini
@@ -63,9 +64,9 @@ SHA1 d4de238e4adf89f5fd7ad3faf45229f8cad6a18e t/test-dzst-2.t
 SHA1 45213a4c234744e1740efb80c0498a3c35e2c151 xt/db-single.t
 SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1.4.14 (GNU/Linux)
 
-iEYEARECAAYFAlFFO8UACgkQ34Hwf+GwC4whSgCcDEjZyREWBi7CYxHHna72HfBC
-PP0AoMm2ZywiZuc48VtC0+9q4Dmy1u9y
-=eJPI
+iEYEARECAAYFAlKNeNkACgkQ34Hwf+GwC4yyiQCgomqI1eNItVVr9PbZXYTAZGhC
+OjMAoIIi8v1cdxlnYNff/YinRE3fDbfy
+=zPUu
 -----END PGP SIGNATURE-----
